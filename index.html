@@ -265,6 +265,26 @@
   .testi-subtitle{ text-align:center; font-size:16px; color:var(--ink); max-width:520px; margin: 8px auto 6px; font-weight:600; }
   .testi-desc{ text-align:center; font-size:14.5px; color:var(--ink-soft); max-width:520px; margin: 0 auto; }
 
+  .testi-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; max-width:640px; margin: 36px auto 0; }
+  @media(max-width:640px){ .testi-grid{ grid-template-columns: 1fr; max-width:400px; } }
+  .testi-card{
+    background: var(--cafe-deep); border-radius:16px; padding:26px 24px; color:#fff;
+  }
+  .testi-card .quote-icon{ font-family:'Fraunces',serif; font-size:34px; color: var(--gold); line-height:1; margin-bottom:10px; display:block; }
+  .testi-card .testi-text{ font-size:14.5px; line-height:1.6; color: rgba(255,255,255,0.92); margin: 0 0 18px; font-style:italic; }
+  .testi-card .testi-person{ display:flex; align-items:center; gap:12px; margin-bottom:14px; }
+  .testi-card .testi-avatar{
+    flex-shrink:0; width:42px; height:42px; border-radius:50%; background: var(--gold-deep);
+    color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:600; font-size:16px;
+  }
+  .testi-card .testi-name{ font-weight:700; font-size:14.5px; margin-bottom:2px; }
+  .testi-card .stars{ color: var(--gold); font-size:13px; letter-spacing:1px; }
+  .testi-card .testi-badge{
+    display:inline-flex; align-items:center; gap:6px; background: rgba(124,152,133,0.22); color: #A9CBB0;
+    font-size:12.5px; font-weight:600; padding:6px 14px; border-radius:100px;
+  }
+  .testi-card .testi-badge::before{ content:"●"; color: var(--sage); font-size:9px; }
+
   .quote-block{
     border-left: 3px solid var(--gold); padding-left:20px; margin: 20px 0;
     font-family:'Fraunces',serif; font-style:italic; font-size:18px; color:var(--ink);
@@ -514,6 +534,60 @@
     <span class="eyebrow-sm">Lo que dicen</span>
     <p class="testi-subtitle">Miles de personas ya comenzaron a vender sus pudines sin horno.</p>
     <p class="testi-desc">Personas que decidieron aprender desde casa y hoy preparan deliciosas recetas para vender.</p>
+
+    <div class="testi-grid">
+      <div class="testi-card">
+        <span class="quote-icon">&ldquo;</span>
+        <p class="testi-text">Nunca había preparado un pudín y pensé que sería difícil. Las recetas vienen muy bien explicadas y en pocos días ya estaba vendiendo a mis vecinos. Recuperé la inversión con mis primeros pedidos.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Andrea M.</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <span class="testi-badge">Recuperó su inversión con sus primeras ventas</span>
+      </div>
+
+      <div class="testi-card">
+        <span class="quote-icon">&ldquo;</span>
+        <p class="testi-text">No sabía cocinar y aun así me quedaron deliciosos. Ya tengo clientes que me vuelven a comprar.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Paula R.</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <span class="testi-badge">Primeros clientes en la primera semana</span>
+      </div>
+
+      <div class="testi-card">
+        <span class="quote-icon">&ldquo;</span>
+        <p class="testi-text">Lo que más me gustó es que no necesito horno. Empecé desde mi cocina con muy poca inversión.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">D</div>
+          <div>
+            <div class="testi-name">Diana C.</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <span class="testi-badge">Emprendiendo desde casa</span>
+      </div>
+
+      <div class="testi-card">
+        <span class="quote-icon">&ldquo;</span>
+        <p class="testi-text">El bono del helado de pudín fue un éxito. Ahora tengo más productos para vender y gano más con cada cliente.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">Sandra L.</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <span class="testi-badge">Aumentó sus ventas con el bono</span>
+      </div>
+    </div>
   </section>
 
   <section class="section reveal">
