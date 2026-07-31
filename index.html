@@ -306,6 +306,23 @@
     .letter{ padding: 34px 24px; }
   }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2501597920264748');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2501597920264748&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -466,32 +483,32 @@
         <div class="label">Apoyo inicial</div>
         <div class="amount">$4.99 <span style="font-size:13px;color:var(--ink-soft);">USD</span></div>
         <div class="desc">Si este es tu punto de partida hoy</div>
-        <a class="buy" href="https://whop.com/checkout/plan_ESOtQj1kSUKNv">Quiero mi método</a>
+        <a class="buy" href="https://whop.com/checkout/plan_ESOtQj1kSUKNv" onclick="fbq('track', 'InitiateCheckout')">Quiero mi método</a>
       </div>
       <div class="price-card">
         <div class="label">Contribución consciente</div>
         <div class="amount">$7.99 <span style="font-size:13px;color:var(--ink-soft);">USD</span></div>
         <div class="desc">Un aporte justo por el método completo</div>
-        <a class="buy" href="https://whop.com/checkout/plan_iMdVGnRnH02J2">Quiero mi método</a>
+        <a class="buy" href="https://whop.com/checkout/plan_iMdVGnRnH02J2" onclick="fbq('track', 'InitiateCheckout')">Quiero mi método</a>
       </div>
       <div class="price-card featured">
         <span class="badge">Más elegida</span>
         <div class="label">Recomendada</div>
         <div class="amount">$9.99 <span style="font-size:13px;color:var(--ink-soft);">USD</span></div>
         <div class="desc">Cubre el valor real de mantener el método</div>
-        <a class="buy cta-urgent" href="https://whop.com/checkout/plan_wHQ72i3zq7SSn">Quiero mi método</a>
+        <a class="buy cta-urgent" href="https://whop.com/checkout/plan_wHQ72i3zq7SSn" onclick="fbq('track', 'InitiateCheckout')">Quiero mi método</a>
       </div>
       <div class="price-card">
         <div class="label">Apoyo generoso</div>
         <div class="amount">$12.99 <span style="font-size:13px;color:var(--ink-soft);">USD</span></div>
         <div class="desc">Ayudas a que más personas accedan</div>
-        <a class="buy" href="https://whop.com/checkout/plan_rP68Q8sw1fTPZ">Quiero mi método</a>
+        <a class="buy" href="https://whop.com/checkout/plan_rP68Q8sw1fTPZ" onclick="fbq('track', 'InitiateCheckout')">Quiero mi método</a>
       </div>
       <div class="price-card">
         <div class="label">Máximo apoyo</div>
         <div class="amount">$14.99 <span style="font-size:13px;color:var(--ink-soft);">USD</span></div>
         <div class="desc">Tu forma de impulsar este proyecto</div>
-        <a class="buy" href="https://whop.com/checkout/plan_7zeakGowaXDpw">Quiero mi método</a>
+        <a class="buy" href="https://whop.com/checkout/plan_7zeakGowaXDpw" onclick="fbq('track', 'InitiateCheckout')">Quiero mi método</a>
       </div>
     </div>
 
